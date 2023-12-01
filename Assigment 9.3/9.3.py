@@ -10,7 +10,6 @@ def is_balanced_delimiters(input_string):
                 return False
 
     return len(stack) == 0
-
 input_str1 = "([{}])"
 input_str2 = "([)]"
 input_str3 = "([]{})"
