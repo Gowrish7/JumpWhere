@@ -6,12 +6,12 @@ select Dname from department inner join emp
 on emp.DeptNo = department.DeptNo group by
 Dname having count(*)>1; 
 
---3. Write a query to fetch employee details whose name starts with the letter “S”
+--3. Write a query to fetch employee details whose name starts with the letter â€œSâ€
 select * from emp where Ename like 'S%';
 
 --4. Select Emp Details Whose experience is more than 2 years 
 
---5. Write a SELECT statement to replace the char “a” with “#” in Employee Name ( Ex:  Sachin as S#chin)
+--5. Write a SELECT statement to replace the char â€œaâ€ with â€œ#â€ in Employee Name ( Ex:  Sachin as S#chin)
 select Ename, replace(Ename, 'a','#')
 as new_ename from emp;
 
